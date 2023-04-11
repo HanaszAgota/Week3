@@ -1,0 +1,74 @@
+h2 {
+    font-size: 30px;
+    color: red;
+  }
+  .blue-text {
+      color: blue;
+  }
+  
+  #main-heading {
+      font-size: 84px;
+  }
+  
+  /* Kombinalt szelektor */
+  /* Ebben a példában a "p" elemet választjuk ki, amelynek az osztálya "blue-text", és a szöveg színét kék színűre állítjuk. */
+  p.blue-text {
+    text-decoration: underline;
+  }
+  /* Ebben a példában az összes "button" osztályú elemre alkalmazzuk a színeket, amelyek az "section" osztályon belül találhatók. */
+  .section .button {
+    background-color: #333;
+    color: #fff;
+  }
+  /* Az "ul li" szelektor kiválasztja az összes "li" elemet, amelyek egy "ul" elem alatt vannak. */
+  ul li {
+    list-style-type: square;
+  }
+  /* Azokat választja ki amelyek mindkét stílust tartalmazzák */
+  .sel1.sel2 {
+  background-color: yellow;
+  }
+  
+  /* Ez egy szóközzel elválasztott szelektor, amely az intro osztályú elemeket keresi a p elemek belső tartalmában. */
+  p .intro {
+    color: red;
+  }
+  /* Csak a közvetlen leszármozottját jelöki ki */
+  .parent > .child {
+  /*   background-color: green; */
+  }
+  /* Minden child nevű osztály elemet kiválaszt */
+  .parent .child {
+  /* background-color: green; */
+  }
+  /* Közvetlen testvér szelektor */
+  div + p {
+    background-color: yellow;
+  }
+  
+  /* Általános testvér szelektor */
+  /* div ~ p {
+    background-color: orange;
+  } */
+  
+  /* PSEUDO CLASS */
+  /* unvisited link */
+  a:link {
+    color: #FF0000;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #00FF00;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #FF00FF;
+    background-color: black;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #0000FF;
+  }
